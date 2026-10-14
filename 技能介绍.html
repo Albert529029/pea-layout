@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pea-公众号排版糕手 · 技能介绍</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#f4f1ec;color:#2b2b2b;line-height:1.8;}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px 80px;}
+  /* hero */
+  .hero{background:linear-gradient(135deg,#E89178 0%,#9C2B2B 100%);color:#fff;padding:64px 20px 56px;text-align:center;}
+  .hero h1{font-size:34px;letter-spacing:2px;margin-bottom:12px;}
+  .hero p{font-size:15px;opacity:.95;max-width:640px;margin:0 auto;}
+  .hero .tag{display:inline-block;margin-top:18px;padding:6px 16px;border:1px solid rgba(255,255,255,.6);border-radius:20px;font-size:13px;}
+  /* nav */
+  nav{position:sticky;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);z-index:10;}
+  nav ul{display:flex;flex-wrap:wrap;justify-content:center;list-style:none;max-width:980px;margin:0 auto;}
+  nav a{display:block;padding:14px 16px;font-size:14px;color:#555;text-decoration:none;}
+  nav a:hover{color:#9C2B2B;}
+  /* section */
+  section{padding:48px 0 8px;}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+  .sec-num{width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:#2b2b2b;color:#fff;font-size:15px;font-weight:bold;flex:none;}
+  .sec-head h2{font-size:23px;letter-spacing:1px;}
+  p.lead{color:#555;font-size:15px;margin-bottom:14px;}
+  .card{background:#fff;border-radius:14px;padding:22px 24px;box-shadow:0 4px 18px rgba(0,0,0,.05);margin-bottom:18px;}
+  .card h3{font-size:17px;margin-bottom:8px;color:#9C2B2B;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  ul.feat{list-style:none;}
+  ul.feat li{padding:10px 0 10px 26px;position:relative;border-bottom:1px dashed #e6e0d8;}
+  ul.feat li:before{content:"◆";position:absolute;left:0;color:#E89178;}
+  ul.feat li b{color:#2b2b2b;}
+  /* mini phone card */
+  .mini{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.08);}
+  .mini-screen{padding:18px 14px;min-height:200px;}
+  .mini-title{font-size:15px;font-weight:bold;margin:6px 0 6px;line-height:1.4;}
+  .mini-line{font-size:12px;line-height:1.7;}
+  .palette{display:flex;height:26px;}
+  .palette span{flex:1;}
+  .cap{text-align:center;font-size:13px;font-weight:bold;padding:8px 0;background:#faf7f2;color:#444;}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .step{background:#fff;border-radius:12px;padding:16px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.05);}
+  .step .n{width:30px;height:30px;line-height:30px;border-radius:50%;background:#E89178;color:#fff;margin:0 auto 8px;font-weight:bold;}
+  /* file tree */
+  pre.tree{background:#1e1e24;color:#c8e1ff;padding:20px;border-radius:12px;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'SFMono-Regular',Consolas,monospace;}
+  .tree .c{color:#7fd1b9;}
+  iframe.preview{width:100%;height:780px;border:1px solid #e6e0d8;border-radius:12px;background:#fff;}
+  .note{font-size:13px;color:#888;margin-top:8px;}
+  footer{text-align:center;padding:40px 0 0;color:#999;font-size:13px;}
+  @media(max-width:760px){.grid2,.grid3,.steps{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>pea · 公众号排版糕手</h1>
+  <p>一个会读文章、懂气质、手写 SVG 装饰的公众号排版技能。丢给它一篇文章，还你三形态成稿：预览页、可复制源码、手机长图。</p>
+  <span class="tag">内容感知设计 · 全品类差异化 · 微信/秀米 100% 兼容</span>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="#bg">背景</a></li>
+    <li><a href="#what">能做什么</a></li>
+    <li><a href="#play">玩法</a></li>
+    <li><a href="#show">更多效果展示</a></li>
+    <li><a href="#how">它是怎么做出来的</a></li>
+    <li><a href="#use">怎么用</a></li>
+  </ul>
+</nav>
+
+<div class="wrap">
+
+  <!-- 1. 背景 -->
+  <section id="bg">
+    <div class="sec-head"><span class="sec-num">1</span><h2>背景</h2></div>
+    <div class="card">
+      <p class="lead">公众号排版有三道老难题，模板解决不了：</p>
+      <ul class="feat">
+        <li><b>千篇一律</b>——秀米高级模板好看，但人人都用，读者一眼认出"又是那个模板"。</li>
+        <li><b>风格不贴内容</b>——科技文套了花哨卡通风，情感文用了冷硬工业风，气质对不上就掉价。</li>
+        <li><b>原创装饰门槛高</b>——想要一支手绘枝叶、一方水墨印章，要么找设计师，要么不会画。</li>
+      </ul>
+      <p class="lead" style="margin-top:16px;">pea-排版糕手 的思路：把"资深视觉设计师 + 前端工程师"装进一个技能里。先读文章定风格，再用纯 CSS + 内联 SVG 手写装饰，每篇都不重样，且全部 inline-style，直接进微信/秀米就能用。</p>
+    </div>
+  </section>
+
+  <!-- 2. 能做什么 -->
+  <section id="what">
+    <div class="sec-head"><span class="sec-num">2</span><h2>能做什么</h2></div>
+    <div class="grid2">
+      <div class="card"><h3>内容感知设计</h3><p class="lead">通读全文，提取文章类型、情感基调、核心意象、目标读者、内容结构，据此推导最匹配的视觉风格——不套固定模板。</p></div>
+      <div class="card"><h3>代码绘制装饰</h3><p class="lead">用纯 CSS + 内联 SVG 画植物、水墨、几何、插画类装饰，每篇完全原创，不是色块线条堆砌。</p></div>
+      <div class="card"><h3>风格差异化</h3><p class="lead">色相轮偏移、装饰换母题、布局变结构、编号系统唯一化，连排两篇同类型也必须明显不同。</p></div>
+      <div class="card"><h3>微信兼容 + 三形态交付</h3><p class="lead">所有样式 inline，100% 兼容秀米/微信编辑器。一次产出预览 HTML、源码 Markdown、手机长图，交付即闭环。</p></div>
+    </div>
+  </section>
+
+  <!-- 3. 玩法 -->
+  <section id="play">
+    <div class="sec-head"><span class="sec-num">3</span><h2>玩法</h2></div>
+    <div class="card">
+      <p class="lead">交互极简，把判断交给它，把反馈留给自己：</p>
+      <div class="steps">
+        <div class="step"><div class="n">①</div><b>丢文章</b><br><span style="font-size:12px;color:#777;">直接贴文，自动判断最佳风格</span></div>
+        <div class="step"><div class="n">②</div><b>指定风格</b><br><span style="font-size:12px;color:#777;">想走某方向，说一声就按它来</span></div>
+        <div class="step"><div class="n">③</div><b>要求修改</b><br><span style="font-size:12px;color:#777;">哪不满意说哪，整体不破</span></div>
+        <div class="step"><div class="n">④</div><b>迭代收尾</b><br><span style="font-size:12px;color:#777;">长文贯穿同风格，图位自动占位</span></div>
+      </div>
+      <p class="note">长文中途不换风格；文章有图时用 <code>&lt;!-- 此处插入图片 --&gt;</code> 占位并配说明框。</p>
+    </div>
+  </section>
+
+  <!-- 4. 更多效果展示 -->
+  <section id="show">
+    <div class="sec-head"><span class="sec-num">4</span><h2>更多效果展示</h2></div>
+    <p class="lead">两套已落地的完整范本（同属生活方式/文化类，但色系、布局、编号、分隔线全不同）：</p>
+
+    <div class="card">
+      <h3>范本 A · 暖光治愈风《一颗苹果里的秋天》</h3>
+      <iframe class="preview" src="assets/examples/苹果治愈文-公众号排版.html" title="苹果治愈文"></iframe>
+    </div>
+    <div class="card">
+      <h3>范本 B · 新中式水墨风《长安一夜烟火》</h3>
+      <iframe class="preview" src="assets/examples/长安烟火文-公众号排版.html" title="长安烟火文"></iframe>
+    </div>
+
+    <p class="lead" style="margin-top:24px;">风格库里还有 6 个方向，下面各给一张迷你预览卡（配色 + 代表装饰 + 样张）：</p>
+    <div class="grid3">
+
+      <!-- 冷调科技 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#0F1626;">
+          <svg width="60" height="30" viewBox="0 0 60 30"><path d="M5 15 H25 V5 H45" stroke="#3DA9FC" stroke-width="1.5" fill="none"/><circle cx="45" cy="5" r="3" fill="#5EEAD4"/><path d="M25 15 H55" stroke="#5EEAD4" stroke-width="1" fill="none" opacity=".6"/></svg>
+          <div class="mini-title" style="color:#3DA9FC;">AI 不是替代你，是放大你</div>
+          <div class="mini-line" style="color:#E6EDF3;">把重复的事交给工具，把判断留给自己。</div>
+        </div>
+        <div class="palette"><span style="background:#0F1626;"></span><span style="background:#3DA9FC;"></span><span style="background:#5EEAD4;"></span><span style="background:#E6EDF3;"></span><span style="background:#FFFFFF;"></span></div>
+        <div class="cap">冷调科技风</div>
+      </div>
+
+      <!-- 复古杂志 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#F3E9D8;">
+          <svg width="60" height="20" viewBox="0 0 60 20"><text x="0" y="16" font-size="16" fill="#C9A24B">★</text><line x1="18" y1="10" x2="42" y2="10" stroke="#7A4A2B" stroke-width="1"/><text x="44" y="16" font-size="16" fill="#C9A24B">★</text></svg>
+          <div class="mini-title" style="color:#7A4A2B;">秋天的衣橱，要有腔调</div>
+          <div class="mini-line" style="color:#3A2E26;">一件焦糖色风衣，撑起整个季节。</div>
+        </div>
+        <div class="palette"><span style="background:#F3E9D8;"></span><span style="background:#7A4A2B;"></span><span style="background:#C9A24B;"></span><span style="background:#9C3B3B;"></span><span style="background:#3A2E26;"></span></div>
+        <div class="cap">复古杂志风</div>
+      </div>
+
+      <!-- 清新自然 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#F4FAF0;">
+          <svg width="50" height="34" viewBox="0 0 50 34"><path d="M25 32 C25 20 25 14 25 8" stroke="#7CB342" stroke-width="2" fill="none"/><path d="M25 18 C16 16 11 10 10 5 C19 6 24 11 25 18 Z" fill="#7CB342" opacity=".85"/></svg>
+          <div class="mini-title" style="color:#7CB342;">把周末还给山野</div>
+          <div class="mini-line" style="color:#37474F;">走得慢一点，风才追得上你。</div>
+        </div>
+        <div class="palette"><span style="background:#F4FAF0;"></span><span style="background:#7CB342;"></span><span style="background:#4FC3F7;"></span><span style="background:#FFB74D;"></span><span style="background:#37474F;"></span></div>
+        <div class="cap">清新自然风</div>
+      </div>
+
+      <!-- 甜系少女 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#FFF5F7;">
+          <svg width="40" height="34" viewBox="0 0 40 34"><path d="M20 30 C6 20 8 8 20 12 C32 8 34 20 20 30 Z" fill="#F48FB1"/></svg>
+          <div class="mini-title" style="color:#F48FB1;">今天也要甜甜的</div>
+          <div class="mini-line" style="color:#6D4C5B;">一杯莓果气泡水，半刻好心情。</div>
+        </div>
+        <div class="palette"><span style="background:#FFF5F7;"></span><span style="background:#F48FB1;"></span><span style="background:#FFCCBC;"></span><span style="background:#B39DDB;"></span><span style="background:#6D4C5B;"></span></div>
+        <div class="cap">甜系少女风</div>
+      </div>
+
+      <!-- 极简高级 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#FAFAF8;">
+          <svg width="60" height="14" viewBox="0 0 60 14"><line x1="5" y1="7" x2="55" y2="7" stroke="#C0A062" stroke-width="1"/></svg>
+          <div class="mini-title" style="color:#1A1A1A;">少，即是多</div>
+          <div class="mini-line" style="color:#222222;">留白不是空，是给重要的东西让位。</div>
+        </div>
+        <div class="palette"><span style="background:#FAFAF8;"></span><span style="background:#1A1A1A;"></span><span style="background:#C0A062;"></span><span style="background:#8A7A5C;"></span><span style="background:#222222;"></span></div>
+        <div class="cap">极简高级风</div>
+      </div>
+
+      <!-- 暗黑赛博 -->
+      <div class="mini">
+        <div class="mini-screen" style="background:#12121A;">
+          <svg width="60" height="20" viewBox="0 0 60 20"><path d="M5 14 L15 6 L25 14 L35 6 L45 14 L55 6" stroke="#FF2E97" stroke-width="1.5" fill="none"/><path d="M5 8 L15 16 L25 8 L35 16 L45 8 L55 16" stroke="#39FF14" stroke-width="1" fill="none" opacity=".6"/></svg>
+          <div class="mini-title" style="color:#FF2E97;">夜行者的霓虹城市</div>
+          <div class="mini-line" style="color:#EAEAEA;">在故障与光之间，找自己的频率。</div>
+        </div>
+        <div class="palette"><span style="background:#12121A;"></span><span style="background:#FF2E97;"></span><span style="background:#39FF14;"></span><span style="background:#00E5FF;"></span><span style="background:#EAEAEA;"></span></div>
+        <div class="cap">暗黑赛博风</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. 它是怎么做出来的 -->
+  <section id="how">
+    <div class="sec-head"><span class="sec-num">5</span><h2>它是怎么做出来的</h2></div>
+    <div class="card">
+      <p class="lead">技能由「主定义 + 4 份参考 + 示例与脚本」构成，分层解耦、可独立维护：</p>
+      <pre class="tree">
+pea-layout/
+├── <span class="c">SKILL.md</span>                 主定义：角色 / 工作流程 / 技术规范 / 红线
+├── <span class="c">references/</span>
+│   ├── <span class="c">style-library.md</span>       8 套风格库 + 内容→风格映射 + 差异化策略
+│   ├── <span class="c">decoration-library.md</span>  9 个可复用 inline SVG/CSS 装饰组件
+│   ├── <span class="c">output-spec.md</span>         骨架模板 + 字号颜色规范 + 质检清单
+│   └── <span class="c">delivery-workflow.md</span>   三形态交付 + 长图渲染说明
+└── <span class="c">assets/</span>
+    ├── <span class="c">examples/</span>
+    │   ├── 苹果治愈文-公众号排版.html
+    │   └── 长安烟火文-公众号排版.html
+    └── <span class="c">render_longimage.py</span>   Playwright 长图渲染脚本</pre>
+      <p class="lead" style="margin-top:16px;">关键约束写在 SKILL.md 的「技术规范」里：只用 <code>&lt;section&gt;</code>、全部 inline style、禁用 class/id/JS/外链、SVG 内联且属性写元素上、并排布局用 <code>&lt;table&gt;</code>。装饰库和输出规范保证每次产出都稳定过微信渲染。</p>
+    </div>
+  </section>
+
+  <!-- 6. 怎么用 -->
+  <section id="use">
+    <div class="sec-head"><span class="sec-num">6</span><h2>怎么用</h2></div>
+    <div class="card">
+      <p class="lead"><b>触发词</b>：排版 / 公众号排版 / 微信排版 / 文章美化 / 秀米格式 / 推文排版 / 文章视觉设计。</p>
+      <p class="lead"><b>四步出稿</b>：</p>
+      <ul class="feat">
+        <li><b>说需求</b>——"帮我把这篇公众号文章排个版"，或指定风格（如"走新中式水墨风"）。</li>
+        <li><b>收三形态</b>——预览 HTML（浏览器看效果）、源码 Markdown（含可复制 html 块）、效果长图 PNG（390px 手机整页）。</li>
+        <li><b>复制进微信/秀米</b>——把源码 Markdown 里 <code>```html</code> 代码块整段复制，粘贴进编辑器正文即可，样式 100% 保留。</li>
+        <li><b>反馈迭代</b>——"徽章换圆形""主色再暖一点"，它按反馈微调且保持整体设计完整。</li>
+      </ul>
+      <p class="note">长图由无头浏览器按 390px 宽、2x 缩放整页渲染，是真实截图，非占位图。需要批量排版时，可逐篇调用，差异化策略确保篇篇不同。</p>
+    </div>
+  </section>
+
+  <footer>pea-公众号排版糕手 · 内容感知 · 全品类差异化排版 · 微信/秀米直用</footer>
+
+</div>
+</body>
+</html>
