@@ -44,7 +44,7 @@ pea-layout/
 │   ├── output-spec.md        骨架模板 + 字号颜色规范 + 质检清单
 │   └── delivery-workflow.md  三形态交付 + 长图渲染说明
 └── assets/
-    ├── examples/             两个完整范本（暖光治愈 / 新中式水墨）
+    ├── examples/             两个完整范本（暖光治愈 / 新中式水墨），含 HTML + PNG 预览图
     └── render_longimage.py   Playwright 长图渲染脚本
 ```
 
